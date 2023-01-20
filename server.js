@@ -5,7 +5,7 @@ const express = require('express')
 const path = require('path')
 const favicon = require('serve-favicon')
 const logger = require('morgan')
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 3005
 
 const app = express()
 
@@ -23,8 +23,8 @@ app.use(require('./config/checkToken'))
 app.use('/api', routes) <====== Finish code once you got it
 */
 app.use('/api/users', require('./routes/api/users'))
-app.use('/api/fruits', require('./routes/api/fruits'))
-app.use('/api/categories', require('./routes/api/categories'))
+// app.use('/api/fruits', require('./routes/api/fruits'))
+// app.use('/api/categories', require('./routes/api/categories'))
 
 
 
